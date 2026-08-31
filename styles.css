@@ -1,5 +1,5 @@
 h1{
-    color: #7a3131;
+    color: rgb(64, 132, 109);
     font-size: 36px;
     text-align: center;
     margin-top: 20px;
@@ -7,8 +7,8 @@ h1{
 
 header{
     border: 2px solid aquamarine;
+    padding: 10px;
     margin: 20px;
-    margin-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,4 +18,14 @@ div{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
 }
