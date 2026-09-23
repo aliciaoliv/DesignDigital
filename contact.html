@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Terrazzo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-  <header>
-    <img src="Imagens\logo.jpg" alt="Logo do Terrazzo" width="120px" height="auto">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">Sobre nós</a>
-        <a href="contact.html">Contate-nos</a>
+  <header class="flex flex-col gap-4 p-4 md:flex-row md:justify-between md:items-center">
+    <img class="logo" src="Imagens\logo.png" alt="Logo do Terrazzo" width="120px" height="auto">
+    <nav class="navegacao">
+        <a href="index.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Home</a>
+        <a href="about.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Sobre</a>
+        <a href="contact.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Contato</a>
     </nav>
     </header>  
 </body>
-<main> 
-    <section>
-        <h1>Contate-nos</h1>
-        <p>Se você tiver alguma dúvida, sugestão ou quiser saber mais sobre nossos produtos de terrazzo, não hesite em entrar em contato conosco. Estamos à disposição para ajudá-lo a encontrar a solução perfeita para o seu projeto.</p>
-        <p>Você pode nos enviar um e-mail, ligar para nosso número de atendimento ou preencher o formulário de contato abaixo. Nossa equipe terá prazer em responder às suas perguntas e fornecer todas as informações necessárias.</p>
-        <p>Agradecemos seu interesse em nossos produtos e esperamos poder colaborar com você em breve!</p>
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="bg-[#40846D]/18 rounded-xl p-6 md:p-8 shadow-sm margin-y-6 m-8 mb-8">
+        <h1 class="font-[Oswald] sm:text-4xl md:text-5xl text-center px-4 py-6">Contate-nos</h1>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3">Se você tiver alguma dúvida, sugestão ou quiser saber mais sobre nossos produtos de terrazzo, não hesite em entrar em contato conosco. Estamos à disposição para ajudá-lo a encontrar a solução perfeita para o seu projeto.</p>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3">Você pode nos enviar um e-mail, ligar para nosso número de atendimento ou preencher o formulário de contato abaixo. Nossa equipe terá prazer em responder às suas perguntas e fornecer todas as informações necessárias.</p>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3">Agradecemos seu interesse em nossos produtos e esperamos poder colaborar com você em breve!</p>
     </section>
-    <div>   
-        <h2>Formulário de Contato</h2>
+    <div class="mx-auto max-w-xl rounded-xl bg-[#40846D]/10 p-6 shadow-sm md:p-8">   
+        <h2 class="font-[Oswald] sm:text-3xl md:text-4xl text-center px-4 py-6">Formulário de Contato</h2>
         <form> 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Mensagem:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-            <input type="submit" value="Enviar">
+            <label for="nome" class="font-[Oswald] mb-1 block text-lg">Nome:</label>
+            <input type="text" id="nome" name="nome" required class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 focus:border-[#40846D] focus:outline-none focus:ring-2
+               focus:ring-[#40846D]/30"><br><br>
+            <label for="email" class="font-[Oswald] mb-1 block text-lg">E-mail:</label>
+            <input type="email" id="email" name="email" required class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 focus:border-[#40846D] focus:outline-none focus:ring-2
+               focus:ring-[#40846D]/30"><br><br>
+            <label for="message" class="font-[Oswald] mb-1 block text-lg">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="5" required class="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 focus:border-[#40846D] focus:outline-none focus:ring-2
+               focus:ring-[#40846D]/30"></textarea><br><br>
+            <input type="submit" value="Enviar" class="w-full cursor-pointer rounded-lg bg-[#40846D] px-6 py-3
+           font-[Oswald] text-lg text-white
+           transition duration-300 ease-in-out
+           hover:bg-[#285C4A] hover:scale-[1.02]
+           focus:outline-none focus:ring-2 focus:ring-[#285C4A]">
         </form>
     </div>
 </main>
-<footer class="mt-8 bg-[#40846D] px-4 py-6 text-center text-white">
+    <footer class="mt-8 bg-[#40846D] px-4 py-6 text-center text-white">
         <p>&copy; 2026 Terrazzo. Todos os direitos reservados.</p>
- </footer>
+    </footer>
 </html>
