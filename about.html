@@ -4,38 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Terrazzo</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header>
-        <img src="Imagens\logo.png" alt="Logo do Terrazzo" width="120px" height="auto">
+    <header class="flex flex-col gap-4 p-4 md:flex-row md:justify-between md:items-center">
+        <img class="logo" src="Imagens\logo.png" alt="Logo do Terrazzo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Sobre nós</a>
-            <a href="contact.html">Contate-nos</a>
+            <a href="index.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Home</a>
+            <a href="about.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Sobre</a>
+            <a href="contact.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Contato</a>
         </nav>
     </header>
 </body>
-<main> 
-    <section>
-        <h1 class="font-[Oswald] text-5xl text-center p-7">Sobre o Terrazzo</h1>
-        <p class=" font-[Oswald] text-lg font-light font-stretch-extra-expanded; p-3"> O terrazzo é um revestimento atemporal que une arte, resistência e personalidade. Produzido a partir da combinação de fragmentos de mármore, granito, vidro ou outros minerais com uma base cimentícia ou resinada, ele cria superfícies únicas, ricas em textura e movimento.</p>
-        <p class=" font-[Oswald] text-lg font-light font-stretch-extra-expanded; p-3"> Versátil, o terrazzo se adapta a diferentes estilos de decoração — do contemporâneo ao clássico — e pode ser usado em pisos, paredes, bancadas, escadas e detalhes decorativos. Sua ampla variedade de cores e composições permite criar ambientes exclusivos, com acabamento sofisticado e identidade própria.</p>
-        <p class=" font-[Oswald] text-lg font-light font-stretch-extra-expanded; p-3"> Além da beleza, o terrazzo se destaca pela durabilidade e pela facilidade de manutenção. É uma escolha inteligente para quem busca um material elegante, resistente e com um visual que permanece atual por muitos anos.</p>
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> 
+    <section class="bg-[#40846D]/18 rounded-xl p-6 md:p-8 shadow-sm margin-y-6 m-8 mb-8">
+        <h1 class="font-[Oswald] sm:text-4xl md:text-5xl text-center px-4 py-6">Sobre o Terrazzo</h1>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3"> O terrazzo é um revestimento atemporal que une arte, resistência e personalidade. Produzido a partir da combinação de fragmentos de mármore, granito, vidro ou outros minerais com uma base cimentícia ou resinada, ele cria superfícies únicas, ricas em textura e movimento.</p>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3"> Versátil, o terrazzo se adapta a diferentes estilos de decoração — do contemporâneo ao clássico — e pode ser usado em pisos, paredes, bancadas, escadas e detalhes decorativos. Sua ampla variedade de cores e composições permite criar ambientes exclusivos, com acabamento sofisticado e identidade própria.</p>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3"> Além da beleza, o terrazzo se destaca pela durabilidade e pela facilidade de manutenção. É uma escolha inteligente para quem busca um material elegante, resistente e com um visual que permanece atual por muitos anos.</p>
     </section>
-    <div>
-        <figure>
-            <img src="Imagens\piso2.jpg" alt="Imagem de um chão de terrazzo" width="220" height="auto">
-            <img src="Imagens\piso1.jpg" alt="Imagem de um piso de terrazzo" width="220" height="auto">
-            <img src="Imagens\bancadacozinha1.jpg" alt="Imagem de uma bancada de cozinha de terrazzo" width="220" height="auto">
+    <div class="relative mx-auto max-w-xl overflow-hidden rounded-xl">
+        <figure id="carrossel" class="flex transition-transform duration-500">           
+            <img class="w-full h-80 shrink-0 object-cover" src="Imagens/WhatsApp Image 2026-09-13 at 16.29.50.jpeg" alt="Imagem de uma mesa feita de Terrazzo">
+            <img class="w-full h-80 shrink-0 object-cover" src="Imagens/WhatsApp Image 2026-09-13 at 16.35.41.jpeg" alt="Imagem de uma bancada de cozinha feita com Terrazzo em cores terrosas">
+            <img class="w-full h-80 shrink-0 object-cover" src="Imagens/WhatsApp Image 2026-09-13 at 16.32.09.jpeg" alt="Imagem de uma mesa de Terrazzo com apoio de metal">
+             <img class="w-full h-80 shrink-0 object-cover" src="Imagens\piso2.jpg" alt="Imagem de um chão de terrazzo" width="220" height="auto">
+            <img class="w-full h-80 shrink-0 object-cover" src="Imagens\piso1.jpg" alt="Imagem de um piso de terrazzo" width="220" height="auto">
+            <img class="w-full h-80 shrink-0 object-cover" src="Imagens\bancadacozinha1.jpg" alt="Imagem de uma bancada de cozinha de terrazzo" width="220" height="auto">
         </figure>
+        <button id="anterior"
+        class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/70 px-4 py-2 text-xl shadow hover:bg-white"> ← </button>
+
+        <button id="proximo"
+        class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/70 px-4 py-2 text-xl shadow hover:bg-white"> → </button>
     </div>
+<script> /* faz os botoes do carrossel funcionarem */
+    const carrossel = document.getElementById("carrossel");
+    const proximo = document.getElementById("proximo");
+    const anterior = document.getElementById("anterior");
+
+    let indice = 0;
+
+    proximo.addEventListener("click", () => {
+        indice++;
+        carrossel.style.transform = `translateX(-${indice * 100}%)`;
+    });
+
+    anterior.addEventListener("click", () => {
+        indice--;
+        carrossel.style.transform = `translateX(-${indice * 100}%)`;
+    });
+</script>
 </main>
-<body>
     <footer class="mt-8 bg-[#40846D] px-4 py-6 text-center text-white">
         <p>&copy; 2026 Terrazzo. Todos os direitos reservados.</p>
     </footer>
