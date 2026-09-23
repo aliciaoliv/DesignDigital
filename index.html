@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Terrazzo</title>
 </head>
 <body>
-<header> 
-    <figure class = "block-auto">
-        <img class="w-20 md:w-auto lg:w-25" src="Imagens\logo.png" alt="Logo do Terrazzo">
+<header class="flex flex-col gap-4 p-4 md:flex-row md:justify-between md:items-center"> 
+    <figure>
+        <img class="logo" src="Imagens\logo.png" alt="Logo do Terrazzo">
     </figure>
-    <nav class="font-[Oswald] text-x1 font-light font-stretch-expanded; grid grid-cols-3 grid-rows-1;">
-        <button class="grid column-gap-1 p-2 transition-property: all; transition-duration: 300ms; transition-timing-function: ease-in-out; transition-delay: 150ms;"><a href="index.html">Home</a></button>
-        <button class="grid p-2 gap-2 transition-property: all; transition-duration: 300ms; transition-timing-function: ease-in-out;"><a href="about.html">Sobre nós</a></button>
-        <button class="grid p-2 gap-2 border border-solid border-green-600 rounded-sm transition-property: all; transition-duration: 300ms; transition-timing-function: ease-in-out; transition-delay: 150ms; hover: scale-105"> <a href="contact.html">Contate-nos</a></button>
+    <nav class="navegacao">
+        <a href="index.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Home</a>
+        <a href="about.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Sobre</a>
+        <a href="contact.html" class="font-[Oswald] text-xl font-light text-[#40846D] 
+        transition-all duration-300 ease-in-out
+        hover:text-[#285C4A] 
+        hover:-translate-y-0.5 border-b-2 border-transparent hover:border-[#40846D] focus:outline-none focus:ring-2 focus:ring-[#285C4A]">Contato</a>
     </nav>
 </header>
 </body>
-<main> 
-    <section>
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> 
+    <section class="bg-[#40846D]/46 rounded-xl p-6 md:p-8 shadow-sm margin-y-6 m-8 mb-8">
         
-        <h1 class="font-[Oswald] text-5xl text-center p-7">Bem-vindo à Galeria Terrazzo!</h1>
+        <h1 class="font-[Oswald] sm:text-4xl md:text-5xl text-center px-4 py-6">Bem-vindo à Galeria Terrazzo!</h1>
         
-        <p class=" font-[Oswald] text-lg font-light font-stretch-extra-expanded; p-3">O Terrazzo é um material de construção durável e esteticamente agradável, composto por fragmentos de mármore, vidro ou outros materiais, unidos por uma matriz de cimento ou resina. É amplamente utilizado em pisos, paredes e bancadas devido à sua resistência e versatilidade.</p>
-        <p class="font-[Oswald] text-lg font-light font-stretch-extra-expanded; p-3">Nosso site oferece informações detalhadas sobre o Terrazzo, incluindo suas aplicações, benefícios e dicas de manutenção. Explore nossas seções para aprender mais sobre como o Terrazzo pode transformar seus espaços com elegância e durabilidade.</p>
+        <p class=" font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3">O Terrazzo é um material de construção durável e esteticamente agradável, composto por fragmentos de mármore, vidro ou outros materiais, unidos por uma matriz de cimento ou resina. É amplamente utilizado em pisos, paredes e bancadas devido à sua resistência e versatilidade.</p>
+        <p class="font-[Oswald] font-light font-stretch-extra-expanded md:text-lg px-4 md:px-8 py-3">Nosso site oferece informações detalhadas sobre o Terrazzo, incluindo suas aplicações, benefícios e dicas de manutenção. Explore nossas seções para aprender mais sobre como o Terrazzo pode transformar seus espaços com elegância e durabilidade.</p>
+        <div class="botão">
+            <a href="contact.html" class="inline-block mt-4 rounded-lg bg-[#40846D] px-6 py-3 font-[Oswald] text-lg font-light text-white transition duration-300 ease-in-out hover:bg-[#285C4A] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#285C4A]"> Entre em contato </a>
+        </div>
     </section>
 
-        <div>
-           <figure class="grid grid-cols-3 grid-rows-1; column-gap-1 row-gap-1;">
-            <img class="grid-cols-3; grid-rows-1; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; gap: 10px; p-5; bg-green-100;" src="Imagens\cubabanheiro2.jpg" alt="Imagem de uma cuba de banheiro de terrazzo" width="220" height="200">
-            <img src="Imagens\cubabanheiro3.jpg" alt="Imagem de uma cuba de banheiro de terrazzo" width="220" height="200">
-            <img  src="Imagens\bancadabanheiro1.jpg" alt="Imagem de uma cuba de banheiro de terrazzo" width="220" height="200">
+        <section>
+           <figure class="galeria">
+            <img class="w-full h-auto rounded-sm transition duration-300 ease-in-out hover:scale-105" src="Imagens\cubabanheiro2.jpg" alt="Imagem de uma cuba de banheiro de terrazzo">
+            <img class="w-full h-auto rounded-sm transition duration-300 ease-in-out hover:scale-105" src="Imagens\cubabanheiro3.jpg" alt="Imagem de uma cuba de banheiro de terrazzo">
+            <img class="w-full h-auto rounded-sm transition duration-300 ease-in-out hover:scale-105" src="Imagens\cubabanheiro1.jpg" alt="Imagem de uma cuba de banheiro de terrazzo">
         </figure>
-    </div>
+    </section>
 </main>
-<body>
-    <footer>
+
+    <footer class="mt-8 bg-[#40846D] px-4 py-6 text-center text-white">
         <p>&copy; 2026 Terrazzo. Todos os direitos reservados.</p>
     </footer>
 </html>
